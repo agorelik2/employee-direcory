@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.empdir_header {
+.empHeader {
   text-align: center;
   margin: 0;
   background-color: #4169e1;
@@ -38,6 +38,12 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 50px;
+}
+
+#empHeaderBody {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

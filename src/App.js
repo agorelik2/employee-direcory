@@ -29,7 +29,7 @@ class App extends Component {
   };
 
   handleSort = (event) => {
-    // Getting the value and name of the input which triggered the change
+    // Getting the value attribute of the event which triggered the change
     let value = event.target.getAttribute("value");
 
     let sorted = [];
