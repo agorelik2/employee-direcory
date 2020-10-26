@@ -40,3 +40,27 @@
     "Lucida Sans", Arial, sans-serif;
   color: rgb(13, 65, 175);
 }
+
+.datatable .th {
+  font-size: 20px;
+}
+
+.datatable .hcol {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.datatable .hcol:hover {
+  color: red;
+}
+/* .datatable .hcol .pointer:after {
+  font-size: 80%;
+  content: "";
+  margin-right: 18px;
+}
+
+.datatable .hcol .pointer:hover:after {
+  font-size: 80%;
+  content: "🔻";
+  margin-right: 0;
+} */

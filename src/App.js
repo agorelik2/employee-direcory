@@ -13,6 +13,8 @@ class App extends Component {
     filteredEmployees: [],
   };
 
+  // Function to Search Employees by their first or last name
+  //----------------------------------------------------------
   handleSearch = (searchInput) => {
     const filtered = this.state.employees.filter((employee) => {
       const first = employee.name.first.toLowerCase();
@@ -28,6 +30,8 @@ class App extends Component {
     this.setState({ filteredEmployees: filtered });
   };
 
+  //Function to sort employees alphabethically by their first or last name
+  //----------------------------------------------------------------------
   handleSort = (event) => {
     // Getting the value attribute of the event which triggered the change
     let value = event.target.getAttribute("value");
