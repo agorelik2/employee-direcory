@@ -7,23 +7,11 @@ function EmployeeTable({ handleSort, filteredEmployees }) {
       <thead>
         <tr>
           <th scope="col">Photo</th>
-          <th
-            scope="col"
-            value="first"
-            key="first"
-            onClick={handleSort}
-            // onClick={() => {
-            //   handleSort();
-            // }}
-          >
-            {/* <button type="button" onClick={props.handleSort}> */}
+          <th scope="col" value="first" key="first" onClick={handleSort}>
             First
-            {/* </button> */}
           </th>
-          <th value="last" scope="col">
-            <button type="button" onClick={handleSort}>
-              Last
-            </button>
+          <th value="last" scope="col" key="last" onClick={handleSort}>
+            Last
           </th>
           <th scope="col">Email</th>
           <th scope="col">Age</th>
