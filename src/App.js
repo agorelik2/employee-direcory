@@ -6,7 +6,6 @@ import Api from "./utils/api.js";
 import Header from "./components/header";
 import SearchBar from "./components/searchBar";
 import EmployeeTable from "./components/employeeTable";
-import _ from "lodash";
 
 class App extends Component {
   state = {
@@ -14,14 +13,6 @@ class App extends Component {
     filteredEmployees: [],
   };
 
-  // _.orderBy(list, item => item.age.milliseconds, ['desc']);
-
-  // handleSort = (key1, key2) =>{
-  //   if(key2){
-  //     _.orderBy(filteredEmployees, employee => employee[key1][key2], ['desc']);
-
-  //   }
-  // }
   handleSearch = (searchInput) => {
     const filtered = this.state.employees.filter((employee) => {
       const first = employee.name.first.toLowerCase();
@@ -40,9 +31,7 @@ class App extends Component {
   handleSort = (event) => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.getAttribute("value");
-    // console.log("value");
-    // console.log(value);
-    // console.log("==============");
+
     let sorted = [];
 
     switch (value) {
