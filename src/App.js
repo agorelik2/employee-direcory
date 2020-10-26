@@ -49,10 +49,10 @@ class App extends Component {
       case "first":
         sorted = [...this.state.filteredEmployees];
         sorted.sort((a, b) => {
-          if (a.first < b.first) {
+          if (a.name.first < b.name.first) {
             return -1;
           }
-          if (a.first > b.first) {
+          if (a.name.first > b.name.first) {
             return 1;
           }
           return 0;
@@ -61,10 +61,10 @@ class App extends Component {
       case "last":
         sorted = [...this.state.filteredEmployees];
         sorted.sort((a, b) => {
-          if (a.last < b.last) {
+          if (a.name.last < b.name.last) {
             return -1;
           }
-          if (a.last > b.last) {
+          if (a.name.last > b.name.last) {
             return 1;
           }
           return 0;
