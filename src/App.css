@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.empdir_header {
+  text-align: center;
+  margin: 0;
+  background-color: #4169e1;
+  color: white;
+  padding: 30px;
+  border-bottom: 12px solid rgb(13, 44, 113);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 50px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
