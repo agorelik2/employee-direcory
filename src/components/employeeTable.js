@@ -3,7 +3,7 @@ import EmployeeRow from "./employeeRow";
 
 function EmployeeTable({ handleSort, filteredEmployees }) {
   return (
-    <table className="table">
+    <table className="table table-hover table-striped">
       <thead>
         <tr>
           <th scope="col">Photo</th>
