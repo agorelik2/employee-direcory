@@ -40,6 +40,9 @@ class App extends Component {
   handleSort = (event) => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.getAttribute("value");
+    // console.log("value");
+    // console.log(value);
+    // console.log("==============");
     let sorted = [];
     switch (value) {
       case "first":

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import EmployeeRow from "./employeeRow";
 
 function EmployeeTable({ handleSort, filteredEmployees }) {
@@ -11,9 +11,10 @@ function EmployeeTable({ handleSort, filteredEmployees }) {
             scope="col"
             value="first"
             key="first"
-            onClick={() => {
-              handleSort();
-            }}
+            onClick={handleSort}
+            // onClick={() => {
+            //   handleSort();
+            // }}
           >
             {/* <button type="button" onClick={props.handleSort}> */}
             First
