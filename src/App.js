@@ -44,6 +44,7 @@ class App extends Component {
     // console.log(value);
     // console.log("==============");
     let sorted = [];
+
     switch (value) {
       case "first":
         sorted = [...this.state.filteredEmployees];
