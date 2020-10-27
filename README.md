@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# employee-direcory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Username:
 
-## Available Scripts
+agorelik2
 
-In the project directory, you can run:
+## Title:
 
-### `npm start`
+### Employee Directory
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Link to the deployed application](https://agorelik2.github.io/employee-directory/.)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Table of Content
 
-### `npm test`
+- [Description](#description)
+- [User Story](#user-story)
+- [Functionality](#functionality)
+- [Screen Shots](#screen-shots)
+- [Development](#development)
+- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Built With](#built-with)
+- [Repo](#repo)
+- [Demo](#demo)
+- [Developer](#developer)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+This application is an employee directory with React. An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. User is able to filter employees by either first or last name. Employees list could be also sorted in alphabetical order based on either first or last names.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Story
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Functionality
 
-### `npm run eject`
+- using axios to get a randonly generated list of people from https://randomuser.me/api
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+getUsers: function () {
+    return axios.get("https://randomuser.me/api/?results=200&nat=us")
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- when the user loads the page, a table of employees is render. The table includes employees photo,first name, last name, email, age and location (city,state).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The user should be able to:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Sort the table of employees by first name and last name. To do that, user has to click on the 'First' or 'Last' column header.
 
-## Learn More
+- Filter the employees by first name and last name. To do that, user has to enter input into the 'Search' box.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screen Shots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The main screen of the application shows
+![image-1](public/assets/images/image-1.png)
 
-### Code Splitting
+User searched on "green", the employees with the last name "greeen" are displayed
+![image-1a](public/assets/images/image-1a.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+User searched on "tina", the employees with the first name "tina" are displayed
+![image-2](public/assets/images/image-2.png)
 
-### Analyzing the Bundle Size
+The employees are sorted by first name
+![image-3](public/assets/images/image-3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The employees are sorted by last name
+![image-4](public/assets/images/image-4.png)
 
-### Making a Progressive Web App
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application is broken into five UI components: container.js, header.js, searchBar.js, employeeTable.js, and employeeRow.js. The application development process included managing components' state, and responding to on-click events.
 
-### Advanced Configuration
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To use this application locally:
 
-### Deployment
+- Install Node.js on your computer
+- Use `npm install` to install all the dependencies, see [Dependencies](#dependencies) for the complete list
+- npm install axios
+- npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Dependencies
 
-### `npm run build` fails to minify
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
+    "web-vitals": "^0.2.4"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Built With
+
+- [VScode](https://code.visualstudio.com/)
+- [Gitbash](https://gitforwindows.org/)
+- [node.js](https://nodejs.org/en/)
+- [express.js](https://expressjs.com/)
+- [react.js](https://reactjs.org/)
+
+## Repo:
+
+https://github.com/agorelik2/budget-tracker
+
+## Demo:
+
+https://budget-tracker-alina.herokuapp.com/
+
+## Developer
+
+    Alina Gorelik
