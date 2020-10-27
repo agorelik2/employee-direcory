@@ -8,7 +8,7 @@ agorelik2
 
 ### Employee Directory
 
-[Link to the deployed application](https://agorelik2.github.io/employee-directory/.)
+[Link to the deployed application](https://agorelik2.github.io/employee-directory/)
 
 ## Table of Content
 
@@ -104,6 +104,8 @@ To use this application locally:
 https://github.com/agorelik2/employee-directory
 
 ## Demo:
+
+https://agorelik2.github.io/employee-directory/
 
 ## Developer
 
