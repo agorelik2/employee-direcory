@@ -1,4 +1,4 @@
-# employee-direcory
+# employee-directory
 
 ## Username:
 
@@ -41,7 +41,7 @@ getUsers: function () {
     return axios.get("https://randomuser.me/api/?results=200&nat=us")
 ```
 
-- when the user loads the page, a table of employees is render. The table includes employees photo,first name, last name, email, age and location (city,state).
+- when the user loads the page, a table of employees is rendered. For each employee, the table includes employee's photo, first name, last name, email, age and location (city,state).
 
 The user should be able to:
 
@@ -54,10 +54,10 @@ The user should be able to:
 The main screen of the application shows
 ![image-1](public/assets/images/image-1.png)
 
-User searched on "green", the employees with the last name "greeen" are displayed
+User searched on "green", the employees with the last name "Green" are displayed
 ![image-1a](public/assets/images/image-1a.png)
 
-User searched on "tina", the employees with the first name "tina" are displayed
+User searched on "tina", the employees with the first name "Tina" are displayed
 ![image-2](public/assets/images/image-2.png)
 
 The employees are sorted by first name
@@ -101,11 +101,9 @@ To use this application locally:
 
 ## Repo:
 
-https://github.com/agorelik2/budget-tracker
+https://github.com/agorelik2/employee-directory
 
 ## Demo:
-
-https://budget-tracker-alina.herokuapp.com/
 
 ## Developer
 
